@@ -2,7 +2,7 @@ import { ReactRouterNav } from "../ReactRouterNav";
 
 export function Page2() {
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen">
+    <div>
       <ReactRouterNav />
 
       <span>Page 2</span>

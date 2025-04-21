@@ -7,9 +7,9 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<WelcomePage />} />
-        <Route path="/page-1" element={<Page1 />} />
-        <Route path="/page-2" element={<Page2 />} />
+        <Route path="/react-router" element={<WelcomePage />} />
+        <Route path="/react-router/page-1" element={<Page1 />} />
+        <Route path="/react-router/page-2" element={<Page2 />} />
       </Routes>
     </BrowserRouter>
   );

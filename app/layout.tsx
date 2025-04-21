@@ -27,7 +27,13 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="flex flex-col h-screen w-screen items-center justify-center">
+          <a href="/" className="text-xs text-blue-600 w-[300px] mb-12">
+            Back
+          </a>
+
+          <div className="border border-zinc-600 rounded p-5">{children}</div>
+        </div>
       </body>
     </html>
   );

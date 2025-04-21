@@ -7,7 +7,7 @@ export default async function Page() {
   await sleep(3);
 
   return (
-    <div className="flex flex-col items-center justify-center w-screen h-screen">
+    <div>
       <NextNav />
 
       <span>Page 2</span>
