@@ -10,7 +10,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route
-          path="/mystery-router"
+          path="/react-router"
           element={
             <SuspenseWrapper>
               <WelcomePage />
@@ -19,7 +19,7 @@ export default function App() {
         />
 
         <Route
-          path="/mystery-router/page-1"
+          path="/react-router/page-1"
           element={
             <SuspenseWrapper>
               <Page1 />
@@ -27,7 +27,7 @@ export default function App() {
           }
         />
         <Route
-          path="/mystery-router/page-2"
+          path="/react-router/page-2"
           element={
             <SuspenseWrapper>
               <Page2 />
