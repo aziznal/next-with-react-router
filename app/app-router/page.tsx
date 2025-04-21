@@ -5,6 +5,8 @@ import { createSlowResource } from "@/components/UseSuspenseData";
 
 const resource = createSlowResource();
 
+export const dynamic = "force-dynamic";
+
 export default function Page() {
   const data = resource.read();
 
