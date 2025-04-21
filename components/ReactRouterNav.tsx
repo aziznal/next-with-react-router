@@ -1,6 +1,6 @@
 import { Link } from "react-router";
 
-export const Nav = () => {
+export const ReactRouterNav = () => {
   return (
     <div className="text-sm flex gap-2 mb-4">
       <Link

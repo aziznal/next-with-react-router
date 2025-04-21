@@ -1,9 +1,9 @@
-import { ReactRouterNav } from "../ReactRouterNav";
+import { NextNav } from "@/components/NextNav";
 
-export function WelcomePage() {
+export default function WelcomePage() {
   return (
     <div className="flex flex-col items-center justify-center w-screen h-screen">
-      <ReactRouterNav />
+      <NextNav />
 
       <span>Welcome Page</span>
     </div>
