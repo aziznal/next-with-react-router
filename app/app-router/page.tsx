@@ -1,16 +1,19 @@
+"use client";
+
 import { NextNav } from "@/components/NextNav";
-import { sleep } from "@/lib/sleep";
+import { createSlowResource } from "@/components/UseSuspenseData";
 
-export const dynamic = "force-dynamic";
+const resource = createSlowResource();
 
-export default async function WelcomePage() {
-  await sleep(3);
+export default function Page() {
+  const data = resource.read();
 
   return (
     <div>
       <NextNav />
 
-      <span>Welcome Page</span>
+      <div>Welcome Page</div>
+      <div>{data}</div>
     </div>
   );
 }
