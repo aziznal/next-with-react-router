@@ -1,11 +1,17 @@
 import { ReactRouterNav } from "../ReactRouterNav";
+import { createSlowResource } from "../UseSuspenseData";
+
+const resource = createSlowResource();
 
 export function WelcomePage() {
+  const data = resource.read();
+
   return (
     <div>
       <ReactRouterNav />
 
-      <span>Welcome Page</span>
+      <div>Welcome Page</div>
+      <div>{data}</div>
     </div>
   );
 }

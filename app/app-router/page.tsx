@@ -1,5 +1,5 @@
 import { NextNav } from "@/components/NextNav";
-import { sleep } from "../lib/sleep";
+import { sleep } from "@/lib/sleep";
 
 export const dynamic = "force-dynamic";
 
